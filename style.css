@@ -1,0 +1,183 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Body & Theme */
+body {
+    background: linear-gradient(135deg, #f0f0f0, #d1e3ff);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    background: #1e3a8a;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: textGlow 2s infinite alternate;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+    font-size: 18px;
+    border: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #1e3a8a;
+    background: #fbbf24;
+    border-radius: 25px;
+    box-shadow: 0 0 15px #fbbf24;
+}
+
+/* Main Section */
+main {
+    padding: 40px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Logo Section */
+div img {
+    transition: transform 0.5s ease;
+}
+
+div img:hover {
+    transform: scale(1.1);
+}
+
+/* Articles */
+article {
+    background: #fff;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: 0.3s;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+article h2 {
+    color: #1e3a8a;
+    font-size: 26px;
+    margin-bottom: 15px;
+    animation: slideInLeft 1s;
+}
+
+article h3 {
+    color: #f59e0b;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* QR Link */
+a[href="QR.jpg"] {
+    display: inline-block;
+    background: #1e3a8a;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+a[href="QR.jpg"]:hover {
+    background: #fbbf24;
+    color: #1e3a8a;
+    box-shadow: 0 0 15px #fbbf24;
+}
+
+/* Iframe Styling */
+iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+iframe:hover {
+    transform: scale(1.02);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 10px #fbbf24, 0 0 20px #fbbf24;
+    }
+    100% {
+        text-shadow: 0 0 15px #f59e0b, 0 0 30px #f59e0b;
+    }
+}
