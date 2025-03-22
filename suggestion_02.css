@@ -155,78 +155,122 @@ footer {
         text-shadow: 0 0 20px #f59e0b, 0 0 30px #f59e0b;
     }
 }
-/* মোবাইলের জন্য */
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 14px;
-        line-height: 1.6;
-        padding: 10px;
-    }
-
-    header h1 {
-        font-size: 22px;
-        text-align: center;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    main {
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 18px;
-        text-align: center;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    input, textarea {
-        width: 100%;
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    button {
-        width: 100%;
-        padding: 12px;
-        font-size: 16px;
-        background: #007bff;
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
-
-    footer {
-        text-align: center;
-        font-size: 14px;
-    }
+/* Resetting some basic styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-/* ট্যাবের জন্য */
-@media only screen and (max-width: 900px) {
-    header h1 {
-        font-size: 28px;
-    }
+body {
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
 
-    nav a {
-        font-size: 18px;
-    }
+/* Header section */
+header {
+  background: #003366;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
-    main {
-        padding: 20px;
-    }
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #0056b3;
+  border-radius: 5px;
+}
+
+/* Main content section */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 10px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #0056b3;
+}
+
+button {
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #003366;
+  color: #fff;
+}
+
+/* ✅ Media Query for Mobile (Responsive Design) */
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    padding: 15px;
+    box-shadow: none;
+  }
+
+  input, textarea, button {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
 }
